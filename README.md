@@ -3,7 +3,7 @@
 Welcome to my official portfolio project! This website showcases my journey as a web designer and developer, featuring modern 3D UI/UX design concepts and interactive web solutions.
 
 ## 🚀 About the Project
-This project is a high-performance web agency landing page designed to provide a seamless user experience. It highlights my technical skills in web development and showcases my ability to bridge the gap between creative visual art and functional code.
+This project is a high-performance web agency landing page designed to provide a seamless user experience. It highlights my technical skills in web development and showcases my ability to bridge the gap between creative visual art and functional code.Modern 3D Tech Agency Portfolio featuring responsive UI/UX and interactive web solutions
 
 ## 🛠 Tech Stack
 - **Languages:** HTML5, CSS3
