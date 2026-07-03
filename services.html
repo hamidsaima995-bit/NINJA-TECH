@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px;
+        }
+        .service-card {
+            background: #111;
+            padding: 30px;
+            border: 1px solid #00d4ff;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px #00d4ff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h1>Our Professional Services</h1>
+        <div class="services-container">
+            <div class="service-card"><h3>Web Design</h3><p>Custom responsive layouts.</p></div>
+            <div class="service-card"><h3>App Development</h3><p>iOS & Android solutions.</p></div>
+            <div class="service-card"><h3>AI Integration</h3><p>Smart automation tools.</p></div>
+            <div class="service-card"><h3>Cloud Hosting</h3><p>Secure & fast servers.</p></div>
+            <div class="service-card"><h3>Cybersecurity</h3><p>Advanced data protection.</p></div>
+            <div class="service-card"><h3>3D Web Elements</h3><p>Interactive 3D visuals.</p></div>
+        </div>
+    </main>
+
+</body>
+</html>
