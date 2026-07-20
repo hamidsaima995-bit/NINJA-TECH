@@ -23,11 +23,9 @@
   <section class="section">
     <span class="eyebrow">// Say hello</span>
     <h2>Let's <span class="grad">talk</span>.</h2>
-    <p class="lead">Have a project in mind or want to collaborate? Drop a message and I'll get back to you.</p>
+    <p class="lead">Have a project in mind or want to collaborate? Send a message and I'll get back to you — usually the same day.</p>
 
-    <!-- To receive emails: make a free form at https://formspree.io,
-         then replace YOUR_ID below with your form ID. -->
-    <form class="form" action="https://formspree.io/f/YOUR_ID" method="POST">
+    <form class="form" id="contactForm">
       <label for="name">Your Name</label>
       <input type="text" id="name" name="name" placeholder="Ali Khan" required />
 
@@ -39,12 +37,36 @@
 
       <button type="submit" class="btn btn-primary">Send Message →</button>
     </form>
+
+    <p class="lead" style="margin-top:20px;font-size:.9em;opacity:.75">
+      Prefer email? <a href="mailto:hamidsaima995@gmail.com">hamidsaima995@gmail.com</a>
+    </p>
   </section>
 
   <footer>
     <span>© 2026 Ninja Tech — Saima</span>
     <span><a href="https://github.com/hamidsaima995-bit" target="_blank" rel="noopener">GitHub ↗</a></span>
   </footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  var name    = document.getElementById('name').value.trim();
+  var email   = document.getElementById('email').value.trim();
+  var message = document.getElementById('message').value.trim();
+
+  if(!name || !email || !message) return;
+
+  var text =
+    'Hello Ninja Tech,\n\n' +
+    'Name: '  + name  + '\n' +
+    'Email: ' + email + '\n\n' +
+    message;
+
+  window.open('https://wa.me/923210014466?text=' + encodeURIComponent(text), '_blank');
+});
+</script>
 
 </body>
 </html>
