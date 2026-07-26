@@ -4,49 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — Ninja Tech</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Ninja Tech is a one-founder studio building modern web and app experiences, with a focus on 3D UI/UX and AI-powered tools." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308070f'/%3E%3Crect x='9' y='9' width='14' height='14' rx='4' fill='%238b5cf6'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
 
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
   <nav>
-    <a href="index.html" class="logo"><span class="dot"></span>Ninja Tech</a>
+    <a href="index.html" class="logo"><span class="dot"></span>NINJA TECH</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
+      <a href="about.html" class="active">About</a>
       <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 
-  <section class="section">
-    <span class="eyebrow">About</span>
-    <h2>A solo studio that <span class="grad">ships</span>.</h2>
-    <p class="lead" style="max-width:640px;">
+  <section class="section" style="padding-top:70px;">
+    <span class="eyebrow reveal">About</span>
+    <h2 class="reveal">A solo studio that <span class="grad">ships</span>.</h2>
+    <p class="lead reveal" style="max-width:640px;">
       Ninja Tech is a one-founder studio building modern web and app experiences,
       with a focus on 3D UI/UX and AI-powered tools. I bridge the gap between
       creative design and functional, production-ready code.
     </p>
-    <p class="lead" style="max-width:640px;margin-top:16px;">
+    <p class="lead reveal" style="max-width:640px;margin-top:16px;">
       From satirical games to logistics automation and trade ERPs, every project
-      solves a real problem — often for the  pakistan and world wide.
+      solves a real problem — for Pakistan and worldwide.
     </p>
 
     <div class="grid">
-      <div class="box"><span class="ico">🎯</span><h3>Mission</h3><p>Ship useful, beautiful products that earn their keep.</p></div>
-      <div class="box"><span class="ico">🛠️</span><h3>Focus</h3><p>Web, mobile, AI integration and interactive 3D design.</p></div>
-      <div class="box"><span class="ico">⚡</span><h3>Approach</h3><p>Fast iteration, honest work and clean code.</p></div>
+      <div class="box reveal"><span class="ico">🎯</span><h3>Mission</h3><p>Ship useful, beautiful products that earn their keep.</p></div>
+      <div class="box reveal"><span class="ico">🛠️</span><h3>Focus</h3><p>Web, mobile, AI integration and interactive 3D design.</p></div>
+      <div class="box reveal"><span class="ico">⚡</span><h3>Approach</h3><p>Fast iteration, honest work and clean code.</p></div>
     </div>
 
-    <div style="margin-top:34px;">
+    <div class="reveal" style="margin-top:38px;">
       <a href="contact.html" class="btn btn-primary">Let's work together →</a>
     </div>
   </section>
 
   <footer>
     <span>© 2026 Ninja Tech — Saima</span>
+    <span><a href="https://github.com/hamidsaima995-bit" target="_blank" rel="noopener">GitHub ↗</a></span>
   </footer>
 
+  <script src="script.js?v=2" defer></script>
+  <script src="https://nexabot-production-3a24.up.railway.app/widget.js"
+          data-bot-id="bef6ee89-bb1b-4ae0-99c3-8f3625527339"
+          data-api="https://nexabot-production-3a24.up.railway.app"
+          defer></script>
 </body>
 </html>
