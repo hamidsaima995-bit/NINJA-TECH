@@ -4,40 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Team — Ninja Tech</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Meet the founder behind Ninja Tech — small team, big output." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308070f'/%3E%3Crect x='9' y='9' width='14' height='14' rx='4' fill='%238b5cf6'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
 
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
   <nav>
-    <a href="index.html" class="logo"><span class="dot"></span>Ninja Tech</a>
+    <a href="index.html" class="logo"><span class="dot"></span>NINJA TECH</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
       <a href="about.html">About</a>
-      <a href="team.html">Team</a>
+      <a href="team.html" class="active">Team</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 
-  <section class="section">
-    <span class="eyebrow"></span>
-    <h2>Meet the <span class="grad">team</span></h2>
-    <p class="lead">Small team, big output. Every product is built with care.</p>
-    <div class="grid">
-      <div class="box" style="max-width:320px; text-align:center;">
-        <span class="ico" style="font-size:40px;"></span>
+  <section class="section" style="padding-top:70px;">
+    <span class="eyebrow reveal">People</span>
+    <h2 class="reveal">Meet the <span class="grad">team</span></h2>
+    <p class="lead reveal">Small team, big output. Every product is built with care.</p>
+    <div class="grid" style="justify-content:start;">
+      <div class="box team-card reveal">
+        <div class="avatar">S</div>
         <h3>Saima</h3>
         <p>Founder &amp; Lead Developer</p>
-        <a href="https://github.com/hamidsaima995-bit" target="_blank" rel="noopener" class="live-btn">GitHub ↗</a>
+        <div class="chips">
+          <span>Full-stack</span><span>AI</span><span>3D UI</span><span>WhatsApp API</span>
+        </div>
+        <a href="https://github.com/hamidsaima995-bit" target="_blank" rel="noopener" class="live-btn" style="align-self:center;">GitHub ↗</a>
       </div>
     </div>
   </section>
+
+  <div class="cta-band reveal">
+    <h2>Want this energy on <span class="grad">your project</span>?</h2>
+    <p>One founder, full accountability — design, code and deployment from a single pair of hands.</p>
+    <a href="contact.html" class="btn btn-primary">Work with us →</a>
+  </div>
 
   <footer>
     <span>© 2026 Ninja Tech — Saima</span>
     <span><a href="contact.html">Work with us →</a></span>
   </footer>
 
+  <script src="script.js?v=2" defer></script>
+  <script src="https://nexabot-production-3a24.up.railway.app/widget.js"
+          data-bot-id="bef6ee89-bb1b-4ae0-99c3-8f3625527339"
+          data-api="https://nexabot-production-3a24.up.railway.app"
+          defer></script>
 </body>
 </html>
