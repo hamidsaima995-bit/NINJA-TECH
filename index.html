@@ -4,64 +4,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ninja Tech — Future of Tech</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Ninja Tech — modern web & app experiences, AI-powered tools and interactive 3D interfaces, designed and shipped by a solo founder who codes." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308070f'/%3E%3Crect x='9' y='9' width='14' height='14' rx='4' fill='%238b5cf6'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
+
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
   <nav>
-    <a href="index.html" class="logo"><span class="dot"></span>Ninja Tech</a>
+    <a href="index.html" class="logo"><span class="dot"></span>NINJA TECH</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <div class="menu">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="services.html">Services</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
       <a href="about.html">About</a>
       <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
+
   <header class="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
     <div class="hero-inner">
-      <span class="eyebrow">Digital Studio </span>
-      <h1>FUTURE OF TECH</h1>
+      <span class="eyebrow">Digital Studio — Lahore</span>
+      <h1>
+        <span class="line"><span class="chrome">Future of</span></span>
+        <span class="line"><span class="grad">Tech.</span></span>
+      </h1>
       <p>Modern web &amp; app experiences, AI-powered tools and interactive 3D interfaces — designed and shipped by a solo founder who codes.</p>
       <div class="hero-cta">
         <a href="portfolio.html" class="btn btn-primary">Explore Projects →</a>
         <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
       </div>
     </div>
-    <div class="hologram-circle">
-      <div class="inner-glow"></div>
+    <div class="hero-meta">
+      <span><b>07+</b> Products shipped</span>
+      <span><b>06</b> Live in production</span>
+      <span><b>AI</b> · Web · 3D</span>
     </div>
   </header>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>React</span><span>·</span><span>Node.js</span><span>·</span><span>Supabase</span><span>·</span><span>PostgreSQL</span><span>·</span><span><b>DeepSeek AI</b></span><span>·</span><span>Meta Cloud API</span><span>·</span><span>Railway</span><span>·</span><span>3D UI</span><span>·</span><span>PWA</span><span>·</span>
+      <span>React</span><span>·</span><span>Node.js</span><span>·</span><span>Supabase</span><span>·</span><span>PostgreSQL</span><span>·</span><span><b>DeepSeek AI</b></span><span>·</span><span>Meta Cloud API</span><span>·</span><span>Railway</span><span>·</span><span>3D UI</span><span>·</span><span>PWA</span><span>·</span>
+    </div>
+  </div>
+
   <section class="section">
-    <span class="eyebrow"></span>
-    <h2>Services</h2>
+    <span class="eyebrow reveal">What I build</span>
+    <h2 class="reveal"><span class="chrome">Services</span></h2>
     <div class="grid">
-      <div class="box"><span class="ico">🌐</span><h3>Web Development</h3><p>Fast, responsive websites built with clean, modern code.</p></div>
-      <div class="box"><span class="ico">🤖</span><h3>AI Solutions</h3><p>Smart automation and AI-powered tools for real problems.</p></div>
-      <div class="box"><span class="ico">📱</span><h3>App Development</h3><p>Mobile-first experiences that feel effortless to use.</p></div>
+      <div class="box reveal"><span class="ico">🌐</span><h3>Web Development</h3><p>Fast, responsive websites built with clean, modern code.</p></div>
+      <div class="box reveal"><span class="ico">🤖</span><h3>AI Solutions</h3><p>Smart automation and AI-powered tools for real problems.</p></div>
+      <div class="box reveal"><span class="ico">📱</span><h3>App Development</h3><p>Mobile-first experiences that feel effortless to use.</p></div>
     </div>
   </section>
+
   <section class="section bordered">
-    <span class="eyebrow"</span>
-    <h2>Numbers that matter</h2>
+    <span class="eyebrow reveal">Track record</span>
+    <h2 class="reveal">Numbers that <span class="grad">matter</span></h2>
     <div class="stats">
-      <div class="stat"><div class="num grad">5+</div><div class="lbl">Products Built</div></div>
-      <div class="stat"><div class="num grad">4</div><div class="lbl">Live Apps</div></div>
-      <div class="stat"><div class="num grad">100%</div><div class="lbl">Hands-on Founder</div></div>
+      <div class="stat reveal"><div class="num" data-count="7" data-suffix="+">0</div><div class="lbl">Products Built</div></div>
+      <div class="stat reveal"><div class="num" data-count="6">0</div><div class="lbl">Live in Production</div></div>
+      <div class="stat reveal"><div class="num" data-count="100" data-suffix="%">0</div><div class="lbl">Hands-on Founder</div></div>
     </div>
-    <p class="lead" style="margin-top:26px;">More products are in development right now — new tools shipping soon.</p>
+    <p class="lead reveal" style="margin-top:30px;">More products are in development right now — new tools shipping soon.</p>
   </section>
+
   <section class="section bordered">
-    <span class="eyebrow">Why me</span>
-    <h2>Where design meets working code.</h2>
-    <p class="lead">I don't just make things look good — I ship products that run in production and solve real problems.</p>
-    <div style="margin-top:30px;">
+    <span class="eyebrow reveal">Why me</span>
+    <h2 class="reveal">Where design meets <span class="grad">working code</span>.</h2>
+    <p class="lead reveal">I don't just make things look good — I ship products that run in production and solve real problems.</p>
+    <div class="reveal" style="margin-top:32px;">
       <a href="about.html" class="btn btn-ghost">More about me →</a>
     </div>
   </section>
+
+  <div class="cta-band reveal">
+    <h2>Have an <span class="grad">idea</span>?</h2>
+    <p>Let's turn it into a real, shippable product — from first sketch to live deployment.</p>
+    <a href="contact.html" class="btn btn-primary">Start a project →</a>
+  </div>
+
   <footer>
     <span>© 2026 Ninja Tech — Saima</span>
     <span>Built with HTML, CSS &amp; a lot of coffee ☕</span>
   </footer>
+
+  <script src="script.js?v=2" defer></script>
+  <script src="https://nexabot-production-3a24.up.railway.app/widget.js"
+          data-bot-id="bef6ee89-bb1b-4ae0-99c3-8f3625527339"
+          data-api="https://nexabot-production-3a24.up.railway.app"
+          defer></script>
 </body>
 </html>
