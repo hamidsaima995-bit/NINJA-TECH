@@ -1,64 +1,38 @@
 # Ninja Tech
 
-Portfolio site for Ninja Tech — the freelance development practice behind ODDEX VIBE, BiltyVault, and Munshi Jee.
+The studio website for Ninja Tech, a web and AI development studio in Lahore. It is a multi-page site covering what the studio does, the work, the team, and how to get in touch. It also hosts a couple of live demo pages for the NexaBot assistant.
 
-**Live:** [beneficial-amazement.up.railway.app](https://beneficial-amazement.up.railway.app)
+Live site: https://ninjatechdev.com
 
----
+## Tech
 
-## About
-
-A multi-page portfolio presenting shipped work, services, and a way to get in touch. Built as static HTML and CSS with no framework and no build step, so it loads instantly and needs nothing to maintain.
+Plain HTML, CSS, and JavaScript. No framework and no build step.
 
 ## Pages
 
-| Page | Purpose |
-|---|---|
-| `index.html` | Landing page and introduction |
-| `portfolio.html` | Project showcase with live links |
-| `services.html` | What Ninja Tech builds |
-| `about.html` | Background and approach |
-| `team.html` | Who is behind it |
-| `contact.html` | Contact form |
+- `index.html`, the home page
+- `services.html`, what the studio offers
+- `portfolio.html`, selected work
+- `about.html`, about the studio
+- `team.html`, the team
+- `contact.html`, the contact form
+- `demo-nexabot.html` and `demo-vanya.html`, live chatbot demos
+- `style.css` and `script.js`, shared styling and scripts
 
-## Tech stack
+## Running it locally
 
-| Layer | Technology |
-|---|---|
-| Markup | HTML |
-| Styling | CSS |
-| Hosting | Railway |
+Because it is a static site, you can open `index.html` in a browser. To test it the way it runs online, serve the folder:
 
-No framework, no bundler, no dependencies.
-
-## Why static
-
-A portfolio is a handful of pages that change every few weeks. A framework would add a build pipeline and a dependency tree for content that a browser renders perfectly well on its own. Static HTML means the site loads in under a second and will still work years from now without a single update.
-
-## Running locally
-
-```bash
-git clone https://github.com/hamidsaima995-bit/NINJA-TECH.git
-cd NINJA-TECH
+```
+python3 -m http.server 8000
 ```
 
-Open `index.html` in a browser.
+Then open http://localhost:8000 in your browser.
 
-For live reload while editing:
+## Deployment
 
-```bash
-npx serve
-```
+Deployed on Railway. Pushing to the main branch updates the live site.
 
-## Services
+## Author
 
-Ninja Tech builds web applications for small businesses and startups:
-
-- Business tools — ledgers, inventory, billing, CRM
-- Web applications with React and Node.js
-- Supabase backends and database design
-- AI integrations including chatbots and content generation
-
----
-
-Built by [Saima](https://github.com/hamidsaima995-bit)
+Saima Hamid, Ninja Tech, Lahore. https://ninjatechdev.com
