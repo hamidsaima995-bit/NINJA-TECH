@@ -443,3 +443,6 @@ footer a:hover { text-decoration: underline; }
   .cta-band { margin-bottom: 60px; padding: 46px 24px; }
   .stat .num { font-size: 42px; }
 }
+
+/* project screenshots on the portfolio cards */
+.box .pshot{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top center;border-radius:10px;margin-bottom:14px;border:1px solid rgba(255,255,255,.12);background:#0d0b12;}
